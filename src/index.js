@@ -1,4 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
+	if (str.length % 2 === 1) {
+		return false
+	}
 	const stack = [];
 	for (let i = 0; i < str.length; i++) { //check all elements
 		let bool = false;
